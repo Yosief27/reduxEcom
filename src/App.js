@@ -10,14 +10,13 @@ function App() {
 
     <div className="App">
       <Router>
-        <Header/>
+      <Header/>
         <Routes>
           <Route path="/" element={<ProductList/>}/>
-          <Route path="/product" element={<ProductDetail/>}/>
+          <Route path="/product/:id" element={<ProductDetail/>}/>
         </Routes>
 
       </Router>
-      <h1>Hellow from react</h1>e
     </div>
   );
 }
